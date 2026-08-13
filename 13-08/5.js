@@ -5,4 +5,6 @@ function lp(year) {
 }
 
 
-console.log(lp(2000));
+console.log(lp(2001));
+
+
