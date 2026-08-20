@@ -7,7 +7,7 @@
 
 // console.log(x);
 //   let x="cse 34";
-
+var x = "cse 34";
 function test() {
     var x = 10;
     if (true) {
@@ -18,4 +18,4 @@ function test() {
 }
 
 test();
-console.log(x); // ReferenceError: x is not defined
+console.log(x); // "cse 34"
