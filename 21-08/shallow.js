@@ -1,16 +1,28 @@
-const p1 = { 
-    a: 1,
-    b: 
-      { 
-        length: 2,
-        x: 3
+// const p1 = { 
+//     a: 1,
+//     b: 
+//       { 
+//         length: 2,
+//         x: 3
 
-      }
- };
+//       }
+//  };
 
-// Shallow copy using spread
-const p2 = { ...p1 };
+// // Shallow copy using spread
+// const p2 = { ...p1 };
 
-p2.b.x = 99;
-console.log(p2); // 99
-console.log(p1.b.x); // 99 (changed!)
+// p2.b.x = 99;
+// console.log(p2); // 99
+// console.log(p1.b.x); // 99 (changed!)
+
+const p1 = {
+    name: "John",
+    laptop: {
+        cpu: "Intel i5",
+        model: "XPS 13"
+    }
+};
+const p2 = structuredClone(p1);
+p2.laptop.cpu = "Intel i7";
+console.log(p1.laptop.cpu);
+console.log(p2.laptop.cpu);
