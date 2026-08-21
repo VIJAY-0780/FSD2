@@ -31,14 +31,14 @@ const person = {
     name: "vj",
     
     laptop: {
-        brand: "Dell",
+        brand1: "Dell",
         model: "XYZ",
     },
 };
 // DOT NOTATION
-console.log(person.laptop.brand); // Dell
+console.log(person.laptop.brand1); // Dell
 
 // BRACKET NOTATION
 console.log(person["laptop"]["model"]); // XYZ
 
-console.log(person.laptop.brand.length); // XYZ
+console.log(person.laptop.brand1.length); // XYZ
