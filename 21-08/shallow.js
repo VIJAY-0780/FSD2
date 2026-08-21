@@ -23,6 +23,13 @@ const p1 = {
     }
 };
 const p2 = structuredClone(p1);
+const p3 = JSON.parse(JSON.stringify(p1));
 p2.laptop.cpu = "Intel i7";
+p3.laptop.cpu = "Intel i9";
 console.log(p1.laptop.cpu);
 console.log(p2.laptop.cpu);
+console.log(p3.laptop.cpu);
+const p4 = Object.assign({}, p1);
+p4.laptop.cpu = "Intel i3";
+console.log(p1.laptop.cpu);
+console.log(p4.laptop.cpu);
