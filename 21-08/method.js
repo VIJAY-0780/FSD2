@@ -19,10 +19,24 @@
 // person.greeting(); // hello vj
 
 
+// const person = {
+//     name: "vj",
+//     greeting: function() {
+//         console.log("hello " + this.name);
+//     }
+// };
+// person.greeting(); 
+
 const person = {
     name: "vj",
-    greeting: function() {
-        console.log("hello " + this.name);
-    }
+    
+    laptop: {
+        brand: "Dell",
+        model: "XYZ",
+    },
 };
-person.greeting(); 
+// DOT NOTATION
+console.log(person.laptop.brand); // Dell
+
+// BRACKET NOTATION
+console.log(person["laptop"]["model"]); // XYZ
