@@ -1,8 +1,16 @@
-const original = { a: 1, b: { x: 10 } };
+const p1 = { 
+    a: 1,
+    b: 
+      { 
+        length: 2,
+        x: 3
+
+      }
+ };
 
 // Shallow copy using spread
-const shallow = { ...original };
+const p2 = { ...p1 };
 
-shallow.b.x = 99;
-
-console.log(original.b.x); // 99 (changed!)
+p2.b.x = 99;
+console.log(p2); // 99
+console.log(p1.b.x); // 99 (changed!)
