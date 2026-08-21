@@ -52,4 +52,7 @@ const b={
     c:40,
 };
 //merge a and b
-let c=Object.assign({},a,b);
+//let c=Object.assign( {},a,b);
+let c={...a,...b};
+
+console.log(c); // { a: 10, b: 30, c: 40 }
