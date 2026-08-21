@@ -40,3 +40,5 @@ console.log(person.laptop.brand); // Dell
 
 // BRACKET NOTATION
 console.log(person["laptop"]["model"]); // XYZ
+
+console.log(person.laptop.brand.length); // XYZ
